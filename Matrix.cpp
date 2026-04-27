@@ -27,7 +27,7 @@ void matrix::create(int rows, int columns) {
 void matrix::null_mat(int rows, int columns) {
     data.assign(rows, std::vector<int>(columns, 0));
     yrows = rows;
-    ycolumns = columns;   // !!! обязательно обновить размеры
+    ycolumns = columns;   
 }
 
 int matrix::getRows() const { return yrows; }
@@ -69,7 +69,7 @@ matrix operator+(const matrix &matrix1, const matrix &matrix2) {
 }
 
 matrix operator-(const matrix &matrix1, const matrix &matrix2) {
-    int input = 0;   // инициализируем
+    int input = 0;  
     matrix err;
     err.def();
     try {
